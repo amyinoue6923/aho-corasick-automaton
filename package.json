@@ -1,0 +1,17 @@
+{
+  "name": "aho-corasick-automaton",
+  "version": "0.1.0",
+  "description": "Searches for multiple string patterns simultaneously in a single pass over the input text.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {}
+}
