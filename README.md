@@ -53,3 +53,10 @@ loop is simpler and faster.
   - `findAll(text: string): { pattern: string, startIndex: number, endIndex: number }[]`
   - `step(state: number, ch: string): number` — single-character transition,
     exposed for streaming consumption of input.
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
